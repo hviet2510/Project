@@ -1,81 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio – David Hendison</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="fade-in">
 
-    <!-- Header -->
-    <div class="section fade-in">
-        <h1 class="title">Hi, I'm <span class="highlight">David</span><br><span class="highlight">Hendison</span></h1>
+    <div class="container">
 
-        <img src="https://i.ibb.co/z8QmkGk/user.png" class="profile" alt="profile">
-        
-        <div class="subtitle">DRep Pioneer Leader</div>
+        <header class="slide-down">
+            <h1>Hi, I'm <span class="highlight">David Hendison</span></h1>
+            <p>DRep Pioneer Leader</p>
+        </header>
 
-        <p>
-            I'm a dedicated Cardano Ambassador and DRep Pioneer Leader, with a strong background 
-            in blockchain technology and community organization.
-        </p>
+        <section class="profile reveal">
+            <img src="img/pfp.png" class="avatar slide-right">
+            <div class="info slide-left">
+                <h2>About Me</h2>
+                <p>A passionate advocate for <span class="highlight">blockchain technology</span> and <span class="highlight">decentralized governance</span>.</p>
+            </div>
+        </section>
 
-        <div class="card">
-            <div class="tag">🔗 DRep ID</div>
-            drepi:zptqfgizptqfgizptq...
-        </div>
+        <section class="about reveal">
+            <h2 class="slide-up">My Experience</h2>
+            <div class="cards">
+                <div class="card slide-left">Project A</div>
+                <div class="card slide-up">Project B</div>
+                <div class="card slide-right">Project C</div>
+            </div>
+        </section>
 
-        <a class="btn">Delegate voting power</a>
     </div>
 
-    <!-- About Me -->
-    <div class="section fade-in">
-        <h2 class="subtitle">About Me</h2>
-
-        <p>
-            A passionate advocate for <span class="highlight">blockchain technology</span> and 
-            <span class="highlight">decentralized governance</span>.
-        </p>
-
-        <div class="card">✔ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-        <div class="card">✔ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-        <div class="card">✔ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-
-        <div class="img-box">
-            <img src="https://i.ibb.co/c8brH7Z/photo1.jpg" alt="">
-        </div>
-    </div>
-
-    <!-- Experience -->
-    <div class="section fade-in">
-        <h2 class="subtitle">My Experience</h2>
-        <h1 class="title"><span class="highlight">Representative</span><br>Experiences</h1>
-
-        <div class="img-box">
-            <img src="https://i.ibb.co/H4Zw6FH/photo2.jpg" alt="">
-        </div>
-
-        <div class="card">
-            <div class="tag">Name of Project</div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </div>
-
-        <div class="card">
-            <div class="tag">Name of Project</div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </div>
-
-        <div class="card">
-            <div class="tag">Name of Project</div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </div>
-    </div>
-
-    <!-- JS -->
     <script src="script.js"></script>
-
 </body>
 </html>
