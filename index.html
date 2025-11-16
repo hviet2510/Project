@@ -1,40 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio – David Hendison</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>David Hendison — Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="fade-in">
+<body>
 
-    <div class="container">
+  <main class="page">
+    <header class="topbar">
+      <nav class="nav">
+        <a class="nav-logo" href="#">Home</a>
+        <div class="nav-right">
+          <!-- bạn có thể thêm link mạng xã hội ở đây -->
+        </div>
+      </nav>
+    </header>
 
-        <header class="slide-down">
-            <h1>Hi, I'm <span class="highlight">David Hendison</span></h1>
-            <p>DRep Pioneer Leader</p>
-        </header>
+    <section class="hero">
+      <div class="hero-left">
+        <h1 class="name">Hi, I'm <span class="accent">Việt</span><br><span class="accent">(Namer)</span></h1>
+        <p class="role">DRep Pioneer Leader</p>
 
-        <section class="profile reveal">
-            <img src="img/pfp.png" class="avatar slide-right">
-            <div class="info slide-left">
-                <h2>About Me</h2>
-                <p>A passionate advocate for <span class="highlight">blockchain technology</span> and <span class="highlight">decentralized governance</span>.</p>
+        <div class="meta">
+          <div class="meta-row">
+            <div class="meta-label">🔗 DRep ID</div>
+            <div class="meta-value">drepi:zptqfgizptqfgizptq... </div>
+          </div>
+
+          <div class="meta-actions">
+            <a class="btn-outline" href="#">Delegate voting power</a>
+            <div class="icons">
+              <a aria-label="twitter" href="#">🐦</a>
+              <a aria-label="email" href="#">✉️</a>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
 
-        <section class="about reveal">
-            <h2 class="slide-up">My Experience</h2>
-            <div class="cards">
-                <div class="card slide-left">Project A</div>
-                <div class="card slide-up">Project B</div>
-                <div class="card slide-right">Project C</div>
-            </div>
-        </section>
+      <div class="hero-right">
+        <div class="avatar-wrap">
+          <img class="avatar" src="https://i.ibb.co/z8QmkGk/user.png" alt="Avatar">
+        </div>
+      </div>
+    </section>
 
-    </div>
+    <section class="about">
+      <div class="about-left">
+        <h3 class="eyebrow">About Me</h3>
+        <h2 class="about-title">A passionate advocate for <span class="accent">blockchain technology</span> and <span class="accent">decentralized governance</span>.</h2>
+        <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 
-    <script src="script.js"></script>
+        <ul class="feature-list">
+          <li>✔ Community building & governance</li>
+          <li>✔ Cardano ambassador activities</li>
+          <li>✔ Technical & strategic advising</li>
+        </ul>
+      </div>
+
+      <div class="about-right">
+        <img class="hero-photo" src="https://i.ibb.co/c8brH7Z/photo1.jpg" alt="Photo">
+      </div>
+    </section>
+
+    <section class="experience">
+      <div class="section-head">
+        <small class="eyebrow">My Experience</small>
+        <h2 class="section-title">Representative <span class="accent">Experiences</span></h2>
+      </div>
+
+      <div class="exp-grid">
+        <div class="exp-left">
+          <img src="https://i.ibb.co/H4Zw6FH/photo2.jpg" alt="Project image" class="exp-img">
+        </div>
+
+        <div class="exp-right">
+          <article class="exp-card">
+            <div class="exp-card-title">Name of Project</div>
+            <p class="exp-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-card-title">Name of Project</div>
+            <p class="exp-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-card-title">Name of Project</div>
+            <p class="exp-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> David Hendison — All rights reserved</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
