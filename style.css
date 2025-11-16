@@ -1,0 +1,69 @@
+body {
+    background: #111;
+    color: #ddd;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fade-in toàn trang */
+.fade-in {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Slide Animations */
+.slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.7s ease;
+}
+
+.slide-down {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: 0.7s ease;
+}
+
+.slide-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: 0.7s ease;
+}
+
+.slide-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: 0.7s ease;
+}
+
+/* Khi phần tử reveal xuất hiện */
+.reveal.active .slide-up,
+.reveal.active .slide-down,
+.reveal.active .slide-left,
+.reveal.active .slide-right {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+/* Cards */
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
+.highlight {
+    color: #c4ff3f;
+}
