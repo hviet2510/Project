@@ -1,11 +1,10 @@
+
 /* -----------------------------------------
    1. Chuyển về loading.html khi reload trang
 ------------------------------------------ */
-if (!sessionStorage.getItem("visited")) {
-    sessionStorage.setItem("visited", "true");
+if (!sessionStorage.getItem("loadedFromLoading")) {
     window.location.href = "loading.html";
 }
-
 /* -----------------------------------------
    2. Cập nhật năm hiện tại
 ------------------------------------------ */
