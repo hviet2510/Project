@@ -1,13 +1,11 @@
-const hamster = document.getElementById("hamster");
+document.addEventListener("DOMContentLoaded", function () {
+    document.body.style.cursor = "pointer"; // hiển thị click được
 
-// Khi click vào hamster
-hamster.addEventListener("click", () => {
-    hamster.classList.add("hamster-exit");
+    document.body.addEventListener("click", () => {
+        document.body.classList.add("page-exit");
 
-    // fade toàn trang
-    document.body.classList.add("page-exit");
-
-    setTimeout(() => {
-        window.location.href = "index.html";
-    }, 800); // đúng bằng thời gian animation
+        setTimeout(() => {
+            window.location.href = "index.html";
+        }, 600); // delay để animation chạy xong
+    });
 });
