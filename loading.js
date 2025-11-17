@@ -1,11 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
-    document.body.style.cursor = "pointer"; // hiển thị click được
 
-    document.body.addEventListener("click", () => {
-        document.body.classList.add("page-exit");
+// Xóa flag mỗi lần vào loading
+sessionStorage.removeItem("loadedFromLoading");
 
-        setTimeout(() => {
-            window.location.href = "index.html";
-        }, 600); // delay để animation chạy xong
-    });
+// Khi click vào đâu cũng vào index
+document.addEventListener("click", () => {
+    sessionStorage.setItem("loadedFromLoading", "true");
+    window.location.href = "index.html";
 });
